@@ -9,7 +9,8 @@ b = tf.Variable(tf.random_normal([1]), name='bias')
 
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
-print(sess.run(W), sess.run(b))
+print(sess.run(W), sess.run(b)) #[0.06524777] [1.4264158]
+
 
 hypothesis = x_train * W + b
 
